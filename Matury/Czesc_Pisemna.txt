@@ -1,0 +1,85 @@
+Zad 1.1
+F
+F
+F
+F
+
+Zad 1.2
+F
+F
+P
+F
+
+Zad 1.3
+P
+F
+F
+F
+
+Zad 1.4
+F
+F
+F
+P
+
+Zad 2.1
+84  5  50,20,10,2,2
+533  7  200,200,100,20,10,2,1
+
+Zad 2.2
+
+
+Zad 2.3
+
+
+Zad 3.1
+92  2*2*23  1,2,4,23,46
+114  2*3*19  1,2,3,6,19,38,67
+
+Zad 3.2
+
+public class pierwsze 
+        {        
+                public static boolean prime(int n) 
+                { 
+                        if (n>2) 
+                        { 
+                        double sq = Math.sqrt(n); 
+                        if(n%2==0) 
+                        return false; 
+                                else 
+                                { 
+                                for(int i=3; i<=sq; i+=2) 
+                                        { 
+                                                if(n%i==0) 
+                                                { 
+                                                return false; 
+                                                } 
+                                        } 
+                                        return true; 
+                                                } 
+                                                } 
+                else if (n==2) return true; 
+                return false; 
+                                } 
+ 
+        public static void main(String args[]) 
+        { 
+        int n=0; 
+        for(int i=0; i<args.length; i++) 
+        { 
+                try 
+                { 
+                        n=Integer.parseInt(args[i]); 
+                        if (prime(n)) System.out.println(n + " jest liczba pierwsza"); 
+                        else System.out.println(n + " nie jest liczba pierwsza"); 
+                                } 
+                                catch (NumberFormatException ex) 
+                                { 
+                                System.out.println(args[i] + " nie jest liczba calkowita"); 
+                                }                      
+                        } 
+        } 
+} 
+
+Zad 3.3
